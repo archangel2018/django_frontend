@@ -20,5 +20,6 @@ from pyfy import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.HomeView.as_view()),
-    path('ping/', views.ping),
+    path(r'ping/?', views.ping),
+    path(r'msg/?', views.msg),
 ]
