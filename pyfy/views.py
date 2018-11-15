@@ -14,4 +14,4 @@ def ping(request):
 def msg(request):
     url = 'http://backend2.geekyarun.com:8080/demo/msg'
     r = requests.get(url)
-    return HttpResponse(r.json())
+    return HttpResponse(r.json()['msg'])
